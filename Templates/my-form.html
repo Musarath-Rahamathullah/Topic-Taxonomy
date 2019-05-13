@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+        background-image: url("https://medatech.com/wp-content/uploads/2016/06/Blog.png");
+background-repeat:no-repeat;
+background-size:100% 100vh;
+} 
+ 
+</style>
+</head>
+
+<body text = "white">
+    <h1>TOPIC CLASSIFICATION</h1>
+    <h2>Top 3 evolving topics</h2>
+    <h>Enter a text to analyze topics</h2>
+    <form action="." method="POST">
+        <input type="text" name="string">
+        <input type="submit" name="my-form" value="Analyze">
+	
+    </form>
+    <br> </br>
+    <br> </br>
+    {{topic}}
+    <br> </br>
+    {{result | safe}}
+    
+</body>
+</html>
